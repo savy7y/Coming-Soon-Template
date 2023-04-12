@@ -1,7 +1,7 @@
 var countDownDate = new Date();
     // Replace with desired date 'January 17, 2019 03:24:00', example
     // countDownDate.setDate('January 17, 2019 03:24:00').getTime();
-    countDownDate.setDate('June 25, 2023 03:24:00');
+    countDownDate.setDate('June 25, 2023 03:24:00').getTime();
     
 
     // Update the count down every 1 second
@@ -20,6 +20,7 @@ var countDownDate = new Date();
       var seconds = Math.floor((distance % (1000 * 60)) / 1000);
       
       if (distance > 0) {
+        print("reaching here")
         $("div[name='seconds']").html(seconds);
         $("div[name='minutes']").html(minutes);
         $("div[name='hours']").html(hours);
